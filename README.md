@@ -83,29 +83,29 @@ plt.title(f"Detected Traffic Sign: {classes[predicted_class]}", fontsize=12, col
 plt.axis("off")
 plt.show()
 ```
-🐍 How to Run
+## 🐍 How to Run
 
 Clone the repository:
 
-git clone https://github.com/Yagnathanakanti/Traffic-Sign-Recognition.git
+```git clone https://github.com/Yagnathanakanti/Traffic-Sign-Recognition.git
 cd Traffic-Sign-Recognition
 
-
+```
 Install dependencies:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 
 Run the notebook or Python script:
 
-python traffic_sign_detection.py
+```python traffic_sign_detection.py```
 
 
 For real-time testing, launch the Gradio interface:
 
-python gradio_interface.py
+```python gradio_interface.py```
 
-🛠 Technologies Used
+## 🛠 Technologies Used
 
 Python, OpenCV, NumPy, Matplotlib
 
@@ -115,18 +115,6 @@ CNN for image classification
 
 Gradio for interactive testing
 
+## References
 
----
-
-This Markdown keeps:
-
-- Clear **subtitles**  
-- Bullet points for preprocessing, model, and tech stack  
-- **Code blocks** for Python commands and example visualization  
-- Clean and GitHub-friendly formatting  
-
----
-
-If you want, I can **combine this with your dataset section, project overview, and contact info** so you get a **complete README.md** ready to paste in one go.  
-
-Do you want me to do that?
+Link - https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
