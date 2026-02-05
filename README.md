@@ -40,7 +40,9 @@ classes = {
  4:'Turn right ahead',
  5:'Turn left ahead'
 }
-```## 🧹 Image Preprocessing and Segmentation
+
+```
+## 🧹 Image Preprocessing and Segmentation
 
 To prepare images for the CNN model, the following preprocessing steps were applied:
 
@@ -50,7 +52,6 @@ To prepare images for the CNN model, the following preprocessing steps were appl
 4. **Normalization:** Pixel values scaled to [0, 1] for neural network input.  
 
 This preprocessing ensures uniformity and improves the model’s ability to learn relevant features.
-
 ---
 
 ## 🧠 Model Architecture
