@@ -86,36 +86,37 @@ plt.show()
 ```
 ## 🐍 How to Run
 
-Clone the repository:
+- Clone the repository:
 
-```git clone https://github.com/Yagnathanakanti/Traffic-Sign-Recognition.git
+```
+git clone https://github.com/Yagnathanakanti/Traffic-Sign-Recognition.git
 cd Traffic-Sign-Recognition
 
 ```
-Install dependencies:
+- Install dependencies:
 
 ```pip install -r requirements.txt```
 
 
-Run the notebook or Python script:
+- Run the notebook or Python script:
 
 ```python traffic_sign_detection.py```
 
 
-For real-time testing, launch the Gradio interface:
+- For real-time testing, launch the Gradio interface:
 
 ```python gradio_interface.py```
 
 ## 🛠 Technologies Used
 
-Python, OpenCV, NumPy, Matplotlib
+- Python, OpenCV, NumPy, Matplotlib
 
-TensorFlow, Keras
+- TensorFlow, Keras
 
-CNN for image classification
+- CNN for image classification
 
-Gradio for interactive testing
+- Gradio for interactive testing
 
 ## References
 
-Link - https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
+- Link - https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
