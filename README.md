@@ -40,60 +40,49 @@ classes = {
  4:'Turn right ahead',
  5:'Turn left ahead'
 }
-
-Images vary in size, lighting, and orientation, making the dataset robust for real-world applications
-
-Supervised learning dataset: Each image is labeled with its corresponding traffic sign category
-
-Dataset Link: GTSRB Traffic Sign Dataset
-
-Image Preprocessing and Segmentation
+```## 🧹 Image Preprocessing and Segmentation
 
 To prepare images for the CNN model, the following preprocessing steps were applied:
 
-Resize: Images standardized to 32x32 pixels using cv2.resize().
-
-Grayscale Conversion: Images converted to grayscale with cv2.cvtColor() to reduce computational complexity.
-
-Histogram Equalization: Applied using cv2.equalizeHist() to enhance contrast and highlight features.
-
-Normalization: Pixel values scaled to [0, 1] for neural network input.
+1. **Resize:** Images standardized to **32x32 pixels** using `cv2.resize()`.  
+2. **Grayscale Conversion:** Images converted to grayscale with `cv2.cvtColor()` to reduce computational complexity.  
+3. **Histogram Equalization:** Applied using `cv2.equalizeHist()` to enhance contrast and highlight features.  
+4. **Normalization:** Pixel values scaled to [0, 1] for neural network input.  
 
 This preprocessing ensures uniformity and improves the model’s ability to learn relevant features.
 
-🧠 Model Architecture
+---
 
-Convolutional Neural Network (CNN)
+## 🧠 Model Architecture
 
-Input: 32x32 grayscale images
+- **Convolutional Neural Network (CNN)**  
+- **Input:** 32x32 grayscale images  
+- **Layers:** Convolutional, MaxPooling, Flatten, Dense layers  
+- **Output:** 6-class softmax classification  
+- Trained using the preprocessed GTSRB dataset for high accuracy and minimal loss  
 
-Layers: Convolutional, MaxPooling, Flatten, Dense layers
+---
 
-Output: 6-class softmax classification
+## 📊 Evaluation
 
-Trained using the preprocessed GTSRB dataset for high accuracy and minimal loss
+- **Validation Accuracy:** 99.63%  
+- **Loss:** 0.0032  
+- The model generalizes well on unseen images, indicating strong predictive reliability  
 
-📊 Evaluation
+---
 
-Validation Accuracy: 99.63%
+## 🖼 Testing & Visualization
 
-Loss: 0.0032
-
-The model generalizes well on unseen images, indicating strong predictive reliability
-
-🖼 Testing & Visualization
-
-The system provides a Gradio interface for real-time predictions
-
-Users can upload an image and immediately view the predicted traffic sign
+The system provides a **Gradio interface** for real-time predictions. Users can upload an image and immediately view the predicted traffic sign.  
 
 Example visualization in Python:
 
+```python
 plt.imshow(img[0, :, :, 0], cmap="gray")
 plt.title(f"Detected Traffic Sign: {classes[predicted_class]}", fontsize=12, color="red")
 plt.axis("off")
 plt.show()
-
+```
 🐍 How to Run
 
 Clone the repository:
@@ -125,3 +114,19 @@ TensorFlow, Keras
 CNN for image classification
 
 Gradio for interactive testing
+
+
+---
+
+This Markdown keeps:
+
+- Clear **subtitles**  
+- Bullet points for preprocessing, model, and tech stack  
+- **Code blocks** for Python commands and example visualization  
+- Clean and GitHub-friendly formatting  
+
+---
+
+If you want, I can **combine this with your dataset section, project overview, and contact info** so you get a **complete README.md** ready to paste in one go.  
+
+Do you want me to do that?
